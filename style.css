@@ -1,0 +1,131 @@
+/* Shared Styles for Both Light and Dark Modes */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #007BFF;
+    padding: 10px;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #007BFF;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    font-size: 24px;
+    color: #333;
+}
+
+input[type="time"] {
+    font-size: 20px;
+    padding: 5px;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#alarm-set-message {
+    display: none;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#alarm-set-message p {
+    color: #007BFF;
+}
+
+#alarm-set-time {
+    font-weight: bold;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: #111;
+}
+.dark-mode p {
+    color: #fff;
+    
+}
+.dark-mode h2{
+    color:#fff;
+}
+
+/* Add more styles for dark mode as needed... */

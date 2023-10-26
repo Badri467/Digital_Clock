@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alarm Clock</h1>
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <main>
+        <h2>Current Time:</h2>
+        <p id="current-time">00:00:00</p>
+        
+        <h2>Set Alarm:</h2>
+        <input type="time" id="alarm-time">
+        <button onclick="setAlarm()">Set Alarm</button>
+        
+        <div id="alarm-set-message" style="display: none;">
+            <p>Alarm is set for <span id="alarm-set-time"></span></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
